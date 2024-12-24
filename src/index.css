@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Essential Leaflet styles */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.leaflet-control-container .leaflet-control {
+  z-index: 2;
+}
+
+/* Fix container heights */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure proper height for map containers */
+.h-\[calc\(100vh-12rem\)\] {
+  height: calc(100vh - 12rem) !important;
+}
